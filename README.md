@@ -27,6 +27,8 @@ La interpolación es un método utilizado para estimar valores intermedios en un
 
 El polinomio de interpolación de Newton se basa en las **diferencias divididas**, que se utilizan para construir un polinomio que pasa por todos los puntos de datos conocidos. El polinomio se expresa como:
 
+
+<span>https://github.com/javihen/PoblacionDeBolivia/blob/main/img/1.png</span>
 \[
 P(x) = f[x_0] + f[x_0, x_1](x - x_0) + f[x_0, x_1, x_2](x - x_0)(x - x_1) + \dots
 \]
