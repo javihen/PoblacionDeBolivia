@@ -29,17 +29,12 @@ El polinomio de interpolación de Newton se basa en las **diferencias divididas*
 
 
 ![alt tag](https://github.com/javihen/PoblacionDeBolivia/blob/main/img/1.png)
-\[
-P(x) = f[x_0] + f[x_0, x_1](x - x_0) + f[x_0, x_1, x_2](x - x_0)(x - x_1) + \dots
-\]
 
 ### 4.3 Interpolación de Lagrange
 
 El método de interpolación de Lagrange utiliza una combinación de polinomios basados en todos los puntos de datos. El polinomio de Lagrange es:
 
-\[
-P(x) = \sum_{i=0}^{n} y_i \cdot L_i(x)
-\]
+![alt tag](https://github.com/javihen/PoblacionDeBolivia/blob/main/img/2.png)
 
 donde cada \(L_i(x)\) es un polinomio que depende de los puntos conocidos.
 
@@ -67,9 +62,7 @@ Los datos de población entre 1882 y 2012 son:
 
 Utilizando la fórmula de Lagrange, el polinomio de interpolación se expresa como:
 
-\[
-P(x) = \sum_{i=0}^{6} y_i \cdot L_i(x)
-\]
+![alt tag](https://github.com/javihen/PoblacionDeBolivia/blob/main/img/2.png)
 
 Los términos \(L_i(x)\) se calculan para \(i = 0, 1, \dots, 6\), y finalmente se evalúa en \(x = 2024\). 
 
@@ -77,10 +70,7 @@ Los términos \(L_i(x)\) se calculan para \(i = 0, 1, \dots, 6\), y finalmente s
 
 La estimación de la población para el año **2024** utilizando el método de Lagrange es:
 
-\[
-P(2024) \approx 6,108,122 \text{ habitantes}
-\]
-
+![alt tag](https://github.com/javihen/PoblacionDeBolivia/blob/main/img/2.png)
 ---
 
 ### 5.3 Interpolación de Newton
@@ -95,9 +85,7 @@ P(x) = f[x_0] + f[x_0, x_1](x - x_0) + f[x_0, x_1, x_2](x - x_0)(x - x_1) + \dot
 
 Evaluando en \(x = 2024\) se obtiene:
 
-\[
-P(2024) \approx 6,108,122 \text{ habitantes}
-\]
+![alt tag](https://github.com/javihen/PoblacionDeBolivia/blob/main/img/3.png)
 
 ---
 
@@ -107,15 +95,11 @@ Se nos dio el valor real de la población en 2024 como **11,312,320 habitantes**
 
 - **Error Absoluto:**
 
-\[
-\text{Error Absoluto} = | 11,312,320 - 6,108,122 | = 5,204,198
-\]
+![alt tag](https://github.com/javihen/PoblacionDeBolivia/blob/main/img/4.png)
 
 - **Error Relativo:**
 
-\[
-\text{Error Relativo} = \left( \frac{5,204,198}{11,312,320} \right) \times 100 \approx 45.99\%
-\]
+![alt tag](https://github.com/javihen/PoblacionDeBolivia/blob/main/img/5.png)
 
 ---
 
